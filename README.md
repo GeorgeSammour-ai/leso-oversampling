@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18410385.svg)](https://doi.org/10.5281/zenodo.18410385)
+
 # LESO — Latent Entropy-guided Synthetic Oversampling
 
 LESO is a generic, standalone oversampling tool for **binary imbalanced classification** problems.
