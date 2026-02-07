@@ -1,3 +1,5 @@
+# LEO: Latent Entropy-guided Synthetic Oversampling
+LEO (formerly referred to as LESO in earlier drafts and early repository versions) is an entropy-guided oversampling method for imbalanced tabular classification. The method models the minority class using latent mixture structure and allocates synthetic samples toward uncertain regions rather than uniformly across the feature space.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18410385.svg)](https://doi.org/10.5281/zenodo.18410385)
 
 # LEO — Latent Entropy-guided Synthetic Oversampling
