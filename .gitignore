@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 README_LOCAL.md
+.DS_Store
+.ipynb_checkpoints/
