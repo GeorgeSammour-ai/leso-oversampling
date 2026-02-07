@@ -1,11 +1,11 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18410385.svg)](https://doi.org/10.5281/zenodo.18410385)
 
-# LESO — Latent Entropy-guided Synthetic Oversampling
+# LEO — Latent Entropy-guided Synthetic Oversampling
 
-LESO is a generic, standalone oversampling tool for **binary imbalanced classification** problems.
+LEO is a generic, standalone oversampling tool for **binary imbalanced classification** problems.
 It implements the *Latent Entropy-guided Synthetic Oversampling* method proposed in our manuscript, combining **latent-state modeling** with **entropy-guided sample generation** to create informative synthetic minority samples while preserving data realism.
 
-The tool operates directly on **CSV datasets**, making it easy for researchers and practitioners to experiment with LESO on real-world tabular data.
+The tool operates directly on **CSV datasets**, making it easy for researchers and practitioners to experiment with LEO on real-world tabular data.
 
 ---
 
@@ -28,7 +28,7 @@ The tool operates directly on **CSV datasets**, making it easy for researchers a
 
 ## Method Overview
 
-LESO generates synthetic minority samples by:
+LEO generates synthetic minority samples by:
 1. Inferring **latent states** in the feature space using a probabilistic mixture model.
 2. Computing **entropy-based weights** that identify ambiguous or under-represented regions.
 3. Allocating synthetic samples preferentially to high-entropy latent states.
@@ -98,7 +98,7 @@ The tool will interactively prompt you to:
 
 ## Reproducibility
 
-LESO is deterministic given a fixed random seed.
+LEO is deterministic given a fixed random seed.
 The tool is intended to support reproducible experimentation and comparative evaluation of oversampling methods.
 
 ---
