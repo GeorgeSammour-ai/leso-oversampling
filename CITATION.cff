@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-title: "LESO: Latent Entropy-guided Synthetic Oversampling"
+message: "If you use this software, please cite it as below. The method was previously referred to as LESO in earlier drafts and versions."
+title: "LEO: Latent Entropy-guided Synthetic Oversampling"
 version: 1.0.0
 date-released: 2026-01-01
 doi: 10.5281/zenodo.18410385
@@ -15,8 +15,9 @@ authors:
 
 keywords:
   - imbalanced learning
-  - oversampling
-  - synthetic data
-  - entropy
-  - latent states
+  - synthetic oversampling
+  - entropy-guided sampling
+  - latent mixture modeling
+  - tabular data classification
+  - rare event detection
   - machine learning
