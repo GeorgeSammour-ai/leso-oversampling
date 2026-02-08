@@ -11,6 +11,20 @@ The tool operates directly on **CSV datasets**, making it easy for researchers a
 
 ---
 
+GUI (Streamlit)
+Run the interactive LEO Analytics Workbench:
+
+Install dependencies:
+pip install -r requirements.txt
+
+Launch the GUI:
+streamlit run src/leo_gui.py
+
+CLI (CSV tool)
+Run the command-line oversampling tool:
+python src/leso_csv_tool.py --input path/to/dataset.csv
+
+---
 ## Key Features
 
 - Supports **binary classification** (minority vs. majority)
