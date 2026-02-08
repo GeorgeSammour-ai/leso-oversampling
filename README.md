@@ -9,6 +9,8 @@ It implements the *Latent Entropy-guided Synthetic Oversampling* method proposed
 
 The tool operates directly on **CSV datasets**, making it easy for researchers and practitioners to experiment with LEO on real-world tabular data.
 
+![LEO Analytics Workbench GUI](assets/gui.png)
+
 ---
 
 GUI (Streamlit)
