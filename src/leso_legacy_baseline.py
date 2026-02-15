@@ -1,3 +1,9 @@
+# IMPORTANT:
+# This file is a historical baseline (LESO) used during method development.
+# It is NOT the LEO method described in the submitted manuscript.
+# The published algorithm is implemented in:
+#     src/leo_csv_tool.py
+#Legacy entropy-weighted SMOTE baseline used for development experiments. Not the method proposed in the paper.
 # leso_csv_tool.py
 # Generic LESO oversampling tool: CSV in → oversampled CSV out
 # - Prompts user for: label column, minority/majority labels, target minority % of majority

@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 import re
 
 # Import official LEO logic from your local leso_csv_tool.py
-from leso_csv_tool import LESO, build_preprocessor, decode_back
+from leo_csv_tool import LEO_Submitted, build_preprocessor, decode_back
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="LEO Analytics Workbench", layout="wide")
@@ -126,9 +126,14 @@ else:
                 pre = build_preprocessor(X_df)
                 X_work = pre.fit_transform(X_df)
                 
-                # Oversample
-                leo = LESO(n_states=n_states, k_neighbors=k_neighbors, alpha=alpha, c_beta=c_beta)
-                X_res, y_res = leo.fit_resample(X_work, y, n_to_add=n_to_be_added, random_state=int(seed))
+                # Oversample (LEO - paper method)
+                leo = LEO_Submitted(
+                n_components=n_states,        # reuse GUI slider/field
+                k_neighbors=k_neighbors,
+                alpha=alpha,
+                reg_covar=1e-6
+                )
+                X_res, y_res, _ = leo.fit_resample(X_work, y, n_to_add=n_to_be_added, random_state=int(seed))
                 X_back = decode_back(pre, X_res)
 
             # --- ANALYTICS DASHBOARD ---
