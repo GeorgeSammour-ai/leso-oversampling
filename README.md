@@ -1,8 +1,8 @@
 # LEO: Latent Entropy-guided Oversampling
 
-This repository provides the official implementation of the **Latent Entropy-guided Oversampling (LEO)** method described in the manuscript submitted to the *International Journal of Machine Learning and Cybernetics*.
+This repository provides the official implementation of the **Latent-Structure Entropy Allocation (LEO)** 
 
-LEO is a data-level resampling technique for binary imbalanced classification problems. It generates synthetic minority samples by identifying uncertain regions of the feature space and allocating samples to those regions using entropy-guided weighting.
+LEO addresses class imbalance by controlling how minority class influence learning using uncertainty information derived from a latent representation for binary imbalanced classification problems. It generates synthetic minority samples by identifying uncertain regions of the feature space and allocating samples to those regions using entropy-guided weighting.
 
 ---
 
@@ -26,7 +26,7 @@ python src/leo_csv_tool.py --input path/to/dataset.csv --mode submitted --target
 
 ## Method Overview
 
-LEO is an oversampling method that uses a latent mixture model to determine where synthetic minority samples should be generated.
+LEO is a reliability-oriented learning method for imbalanced tabular data that uses a latent mixture model to determine where synthetic minority samples should be generated.
 
 The procedure operates as follows:
 
