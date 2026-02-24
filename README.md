@@ -1,4 +1,4 @@
-# LEO: Latent Entropy-guided Oversampling
+# LEO: Latent-Structure Entropy Allocation
 
 This repository provides the official implementation of the **Latent-Structure Entropy Allocation (LEO)** 
 
